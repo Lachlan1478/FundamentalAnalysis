@@ -14,8 +14,6 @@ import yfinance as yf
 
 def GatherData(Ticker, Period, Interval):
     historicalData = yf.Ticker(Ticker).history(period = Period, interval = Interval)
-    #data = historicalData['Close']
-    #data['Dividends'] = historicalData['Dividends']
     return historicalData[["Close", "Dividends"]]
 
 #Testing
