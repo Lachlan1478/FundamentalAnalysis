@@ -35,6 +35,7 @@ def ExpectedReturn(Data):
 def ExpectedReturnRisk(returns):
     return statistics.stdev(returns)
 
+#Testing
 if __name__ == "__main__":
     Ticker = "ORG.AX"
     Period = "10y"
